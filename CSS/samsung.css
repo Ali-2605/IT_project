@@ -1,0 +1,203 @@
+#navitem {
+    color: #E2E2E2;
+    font-family: 'Nunito', sans-serif;
+    line-height: 25px;
+    font-size: 18px;
+    margin-left: 6px;
+    opacity: 0.6;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#navitem:hover{
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+#navitem.active {
+    opacity: 0.9;
+    font-weight: 550;
+}
+
+#navv {
+    background-color: rgb(12, 27, 95);
+    line-height: 20px;
+    --bs-navbar-padding-y: 12px;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 48 48'%3E%3Cpath fill='none' stroke='%238E8E8E' stroke-linecap='round' stroke-linejoin='round' stroke-width='4.65' d='M36 18L24 30L12 18'/%3E%3C/svg%3E");
+    
+}
+.topicon{
+display: inline-block;
+width: 1em;
+height: 1em;
+--svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' d='M24 40.878L43.5 7.122H32.199L24 22.824L15.801 7.122H4.5z'/%3E%3C/svg%3E");
+background-color: currentColor;
+-webkit-mask-image: var(--svg);
+mask-image: var(--svg);
+-webkit-mask-repeat: no-repeat;
+mask-repeat: no-repeat;
+-webkit-mask-size: 100% 100%;
+mask-size: 100% 100%;
+color: white;
+font-size: 3vh;
+}
+.ul {
+    color: white;
+    font-family: 'Poiret One', sans-serif;
+    font-weight: bold;
+    font-size: 27px;
+    position:relative;
+    top: 3px;
+}
+
+.lline {
+    position:relative;
+    display: inline-block;
+    width: 1.3em;
+    height: 1.5em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 20 20'%3E%3Cpath fill='%238E8E8E' fill-rule='evenodd' d='M10 .5a.5.5 0 0 0-.5.5v18a.5.5 0 0 0 1 0V1a.5.5 0 0 0-.5-.5' clip-rule='evenodd'/%3E%3C/svg%3E");
+    
+}
+
+.ali-body{
+    background-color: black;
+    color: white;
+}
+*{padding: 0; margin: 0; box-sizing: border-box;}
+.ali-header {
+    padding-top: 100px;
+    padding-bottom: 90px;
+    text-align: center;
+    border-radius: 0 0 75% 75% / 10%;
+    background-image: linear-gradient( 135deg, rgba(255, 255, 255, 0.705) 15%, #2c44ca);
+    cursor: pointer;
+}
+
+.ali-header h1 {
+    font-family: 'Impact';
+    font-size: 100px;
+    margin-bottom: 15px;
+    color: #00008B;
+}
+
+.ali-header h2{
+    font-family: 'Open Sans';
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.left-content p{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.left-content strong{
+    font-family: 'Open Sans';
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.content{
+    padding-left: 35px;
+    padding-top: 50px;
+}
+
+.left-content{
+    float: left;
+    width: 50%;
+}
+
+.right-content{
+    float: right;
+    width: 50%;
+    padding-left: 70px;
+}
+
+.right-content img{
+    width: 500px;
+    height: 500px;
+}
+
+.left-content p{
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    max-height: 0;
+    margin-bottom: 5px;
+}
+
+.left-content div{
+    padding-top: 25px;
+    padding-left: 15px;
+    border-top: 2px groove #1428A0;
+}
+
+.ali-video{
+    width: 75%;
+    margin-left: 200px;
+}
+
+.ali-button {
+    align-items: center;
+    border: none;
+    padding: 10px;
+    margin-left: 600px;
+    border-radius: 50px;
+    color: white;
+    background: #1428A0;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.ali-button:hover {
+    background-color: #0D1D6F; 
+    color: rgb(180, 166, 166);
+}
+
+
+
+.ali-table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.ali-tr td, .ali-tr th {
+    padding: 8px;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.432);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.432);
+    border-top: 1px solid rgba(255, 255, 255, 0.432);
+}
+
+.ali-tr th {
+    background-color: #1428A0;
+}
+
+.ali-introduction h3{
+    font-family:'Times New Roman';
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.ali-list li{
+    border-bottom: 2px dotted #1428A0;
+    cursor: pointer;
+}
+
+.ali-laptopName{
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.ali-laptopName:hover{
+    color: rgb(180, 166, 166);
+}
