@@ -6,7 +6,7 @@
     <title>Sumsung</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../CSS/sumsung.css">
+    <link rel="stylesheet" href="../CSS/samsung.css">
 </head>
 <body class="ali-body">
     <nav class="navbar" id="navv">
@@ -35,32 +35,31 @@
             </div> <!-- /navbar-collapse -->
         </div> <!-- /container-fluid -->
     </nav> <!-- /navbar -->
-<header class="ali-header">
+<header class="ali-header" id="samsungHeader" onclick="scrollToDiv(this.id)">
     <h1>Sumsung</h1>        
     <h2>Do what you can't.</h2>
-    <br>
 </header>
 <div class="content">
     <div class="left-content">
         <div id="ali-display" onmouseover="change(this)">
             <h3><strong>Stunning Displays:</strong></h3>
-            <p id="ali-display-p" style="max-height: 200px;">Samsung leverages their display expertise for gorgeous visuals, ideal for creative professionals. However, some competitors might offer similar quality at a lower price point.</p>
+            <p id="ali-display-p" style="max-height: 200px;">Samsung leverages their display expertise for gorgeous visuals, ideal for creative professionals.</p>
         </div>
         <div id="ali-factors" onmouseover="change(this)">
             <strong>Innovative Form Factors:</strong>
-            <p id="ali-factors-p">Laptops like the Galaxy Book Flex showcase Samsung's willingness to experiment with unique designs. But these innovative features might come at a cost, potentially impacting repairability.</p>
+            <p id="ali-factors-p">Laptops like the Galaxy Book Flex showcase Samsung's willingness to experiment with unique designs.</p>
         </div>
         <div id="ali-ecosystem" onmouseover="change(this)">
             <strong>Seamless Galaxy Ecosystem:</strong>
-            <p id="ali-ecosystem-p">Samsung devices integrate flawlessly, creating a smooth workflow. This connectivity might be less prevalent if you don't use other Galaxy products.</p>
+            <p id="ali-ecosystem-p">Samsung devices integrate flawlessly, creating a smooth workflow.</p>
         </div>
         <div id="ali-performance" onmouseover="change(this)">
             <strong >Performance for All Needs:</strong>
-            <p id="ali-performance-p">A range of models with high-performance components caters to diverse users. Be prepared for potentially higher price tags compared to competitors offering similar specs.</p>
+            <p id="ali-performance-p">Samsung doesn't offer a one-size-fits-all solution. They boast a diverse range of models, each equipped with high-performance components. This variety ensures you can find the perfect laptop to match your specific needs, whether you're a power user, a casual user, or someone in between.</p>
         </div>
         <div id="ali-premium" onmouseover="change(this)">
             <strong>Premium Quality:</strong>
-            <p id="ali-premium-p">Samsung laptops boast premium materials and features, reflected in their pricing. If budget is a major concern, explore alternatives that might offer better value.</p>
+            <p id="ali-premium-p">Samsung doesn't skimp on quality. Their laptops are built with premium materials like aerospace-grade aluminum for a sturdy and luxurious feel.</p>
         </div>
     </div>
 
@@ -69,11 +68,13 @@
     </div>
 
 </div>
+<video autoplay loop muted controls class="ali-video">
+    <source src="../media/Introducing the Galaxy Book 4 Series.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 <form action="samsungTable.html">
-    <button class="ali-button">Recomndations</button>
+    <button class="ali-button">See Recomndations</button>
 </form>
-<script>
-
-</script>
+<script src="../JavaScript/samsung.js"> </script>
 </body>
 </html>
