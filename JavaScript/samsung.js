@@ -4,128 +4,129 @@ const ecosystem = document.getElementById('ali-ecosystem');
 const performance = document.getElementById('ali-performance');
 const premium = document.getElementById('ali-premium');
 const rightImg = document.getElementById('rightImg');
+const ali_body = document.getElementById('ali-body');
 
-function ali_display(element){
-    var divId = element.id;
-    var textId = divId + '-p';
-    var text = document.getElementById(textId);
+if (ali_body){
+    function ali_display(element){
+        var divId = element.id;
+        var textId = divId + '-p';
+        var text = document.getElementById(textId);
 
-    if (element.id === "ali-display") {
-        factors.querySelector('p').style.maxHeight = '0';
-        ecosystem.querySelector('p').style.maxHeight = '0';
-        performance.querySelector('p').style.maxHeight = '0';
-        premium.querySelector('p').style.maxHeight = '0';
-        rightImg.src = '../photos/laptopDisplay.jpg';
-    } 
-    
-    else if (element.id === "ali-factors") {
-        display.querySelector('p').style.maxHeight = '0';
-        ecosystem.querySelector('p').style.maxHeight = '0';
-        performance.querySelector('p').style.maxHeight = '0';
-        premium.querySelector('p').style.maxHeight = '0';
-        rightImg.src = '../photos/laptopFactors.jpg';
-    } 
-    
-    else if (element.id === "ali-ecosystem") {
-        display.querySelector('p').style.maxHeight = '0';
-        factors.querySelector('p').style.maxHeight = '0';
-        performance.querySelector('p').style.maxHeight = '0';
-        premium.querySelector('p').style.maxHeight = '0';
-        rightImg.src = '../photos/laptopEcosystem.png';
-    } else if (element.id === "ali-performance") {
-        display.querySelector('p').style.maxHeight = '0';
-        factors.querySelector('p').style.maxHeight = '0';
-        ecosystem.querySelector('p').style.maxHeight = '0';
-        premium.querySelector('p').style.maxHeight = '0';
-        rightImg.src = '../photos/laptopPerformance.jpg';
-    } else if (element.id === "ali-premium") {
-        display.querySelector('p').style.maxHeight = '0';
-        factors.querySelector('p').style.maxHeight = '0';
-        ecosystem.querySelector('p').style.maxHeight = '0';
-        performance.querySelector('p').style.maxHeight = '0';
-        rightImg.src = '../photos/laptopPremium.png';
+        if (element.id === "ali-display") {
+            factors.querySelector('p').style.maxHeight = '0';
+            ecosystem.querySelector('p').style.maxHeight = '0';
+            performance.querySelector('p').style.maxHeight = '0';
+            premium.querySelector('p').style.maxHeight = '0';
+            rightImg.src = '../photos/laptopDisplay.jpg';
+        } 
+        
+        else if (element.id === "ali-factors") {
+            display.querySelector('p').style.maxHeight = '0';
+            ecosystem.querySelector('p').style.maxHeight = '0';
+            performance.querySelector('p').style.maxHeight = '0';
+            premium.querySelector('p').style.maxHeight = '0';
+            rightImg.src = '../photos/laptopFactors.jpg';
+        } 
+        
+        else if (element.id === "ali-ecosystem") {
+            display.querySelector('p').style.maxHeight = '0';
+            factors.querySelector('p').style.maxHeight = '0';
+            performance.querySelector('p').style.maxHeight = '0';
+            premium.querySelector('p').style.maxHeight = '0';
+            rightImg.src = '../photos/laptopEcosystem.png';
+        } else if (element.id === "ali-performance") {
+            display.querySelector('p').style.maxHeight = '0';
+            factors.querySelector('p').style.maxHeight = '0';
+            ecosystem.querySelector('p').style.maxHeight = '0';
+            premium.querySelector('p').style.maxHeight = '0';
+            rightImg.src = '../photos/laptopPerformance.jpg';
+        } else if (element.id === "ali-premium") {
+            display.querySelector('p').style.maxHeight = '0';
+            factors.querySelector('p').style.maxHeight = '0';
+            ecosystem.querySelector('p').style.maxHeight = '0';
+            performance.querySelector('p').style.maxHeight = '0';
+            rightImg.src = '../photos/laptopPremium.png';
+        }
+        text.style.maxHeight = '200px';
     }
-    text.style.maxHeight = '200px';
-}
 
-
-function ali_scrollToDiv(id) {
-    if(id == "samsungHeader"){
-        var divName = 'ali-display';
-        divId = document.getElementById(divName);     
-        var position = divId.offsetTop;
+    function ali_scrollToDiv(id) {
+        if(id == "samsungHeader"){
+            var divName = 'ali-display';
+            divId = document.getElementById(divName);     
+            var position = divId.offsetTop;
+        }
+        else if(id == "tableHeader"){
+            var divName = 'ali-introduction';
+            divId = document.getElementById(divName);     
+            var position = divId.offsetTop;
+        }
+        else{
+            var divName = id + "-table";
+            divId = document.getElementById(divName); 
+            var position = divId.offsetTop - 50;
+        } 
+        window.scrollTo({
+            top: position, 
+            behavior: 'smooth'
+        })
     }
-    else if(id == "tableHeader"){
-        var divName = 'ali-introduction';
-        divId = document.getElementById(divName);     
-        var position = divId.offsetTop;
+
+    function ali_copyText(element){
+        text = element.innerHTML;
+        navigator.clipboard.writeText(text);
+        alert("Copied " + text + " to clipboard");
     }
-    else{
-        var divName = id + "-table";
-        divId = document.getElementById(divName); 
-        var position = divId.offsetTop - 50;
-    } 
-    window.scrollTo({
-        top: position, 
-        behavior: 'smooth'
-    })
-}
 
-function ali_copyText(element){
-    text = element.innerHTML;
-    navigator.clipboard.writeText(text);
-    alert("Copied " + text + " to clipboard");
-}
+    const textInput = document.getElementById('textInput');
+    const displaiedText = document.getElementById('displayText');
 
-const textInput = document.getElementById('textInput');
-const displaiedText = document.getElementById('displayText');
-
-const savedText = localStorage.getItem('savedText');
-if (savedText) {
-    displaiedText.textContent = "Hello, " + savedText;
-}
-textInput.addEventListener('keyup', function() {
-    displaiedText.textContent = "Hello, " + this.value;
-  });
-
-function saveText() {
-    const inputText = textInput.value.trim(); 
-    if (inputText) {
-        displaiedText.textContent ="Hello, " + inputText; 
-        localStorage.setItem('savedText', inputText); 
-        textInput.value = ''; 
+    const savedText = localStorage.getItem('savedText');
+    if (savedText) {
+        displaiedText.textContent = "Hello, " + savedText;
     }
-};
-
-function ali_search() {
-    var searchText = document.getElementById("searchText").value;
-    var elementsToSearch = document.querySelectorAll('p, h1, h2, h3, strong'); 
-    var pattern = new RegExp(searchText, "g");
-    var matches = 0;
-    var result = document.getElementById("result");
-  
-    document.querySelectorAll('.highlight').forEach(function (highlightedElement) {
-      highlightedElement.classList.remove('highlight'); 
-    });
-  
-    elementsToSearch.forEach(function(element) {
-      var textContent = element.textContent;
-      element.innerHTML = textContent.replace(pattern, function(match) {
-        matches++;
-        return '<span class="ali-highlight">' + match + '</span>';
-      });
+    textInput.addEventListener('keyup', function() {
+        displaiedText.textContent = "Hello, " + this.value;
     });
 
-    if (searchText == ""){
-        result.innerHTML = "";
-    }
-    else if (matches > 0) {
-        result.innerHTML = "Found " + matches + " matches";
-    } else {
-        result.innerHTML = "No matches found";
-    }
-}  
+    function saveText() {
+        const inputText = textInput.value.trim(); 
+        if (inputText) {
+            displaiedText.textContent ="Hello, " + inputText; 
+            localStorage.setItem('savedText', inputText); 
+            textInput.value = ''; 
+        }
+    };
 
+    function ali_search() {
+        var searchText = document.getElementById("searchText").value;
+        var elementsToSearch = document.querySelectorAll('p, h1, h2, h3, strong'); 
+        var pattern = new RegExp(searchText, "g");
+        var matches = 0;
+        var result = document.getElementById("result");
+    
+        document.querySelectorAll('.highlight').forEach(function (highlightedElement) {
+        highlightedElement.classList.remove('highlight'); 
+        });
+    
+        elementsToSearch.forEach(function(element) {
+        var textContent = element.textContent;
+        element.innerHTML = textContent.replace(pattern, function(match) {
+            matches++;
+            return '<span class="ali-highlight">' + match + '</span>';
+        });
+        });
+
+        if (searchText == ""){
+            result.innerHTML = "";
+        }
+        else if (matches > 0) {
+            result.innerHTML = "Found " + matches + " matches";
+        } else {
+            result.innerHTML = "No matches found";
+        }
+    }  
+}
 
 
 
@@ -250,4 +251,104 @@ function change2(){
 }
 
 // --------------------------------------------------------------
+// Abdullah Hesham's code
+
+const as = document.getElementById("as");
+const us = document.getElementById("us");
+const linkbox = document.getElementById("linkbox");
+const imgdiv = document.getElementById("imgdiv");
+const lap = document.getElementById("asuslap");
+const rectxt = document.getElementById("rectxt");
+const recbut = document.getElementById("recbutto");
+const tw = document.getElementById("tw");
+const tb = document.getElementById("tb");
+const asusform = document.getElementById("asus-form");
+const onAsusStore = document.getElementById("asusStorebody");
+const onAsus = document.getElementById("asusbody");
+
+
+localStorage.setItem('abdullah', asusform);
+var retrievedDataAsus = localStorage.getItem('abdullah');
+console.log(retrievedDataAsus);
+
+
+
+if (onAsusStore){
+    tb.addEventListener('mouseover', function(){
+        tb.style.opacity = "0";
+    });
+    
+    tb.addEventListener('mouseout', function(){
+            tb.style.opacity = "1";
+    });
+    
+    tw.addEventListener('mouseover', function(){
+        tw.style.opacity = "0";
+    });
+    
+    tw.addEventListener('mouseout', function(){
+            tw.style.opacity = "1";
+    });
+}
+
+
+if (onAsus){
+        as.addEventListener('mouseover', function(){
+            as.style.opacity = "0";
+        });
+        
+        as.addEventListener('mouseout', function(){
+                as.style.opacity = "1";
+        });
+        
+        us.addEventListener('mouseover', function(){
+                us.style.opacity = "0";
+        });
+        
+        us.addEventListener('mouseout', function(){
+                us.style.opacity = "1";
+        });
+        
+        imgdiv.addEventListener('mouseover', function(){
+                linkbox.hidden = false;
+                rectxt.style.animation = "rectrans 1s ease";
+                recbut.style.animation = "imtrans 1s ease";
+                lap.style.opacity = "0.3";
+        });
+        
+        imgdiv.addEventListener('mouseout', function(){
+                linkbox.hidden = true;
+                lap.style.opacity = "1";
+        });
+        
+}
+
+
+
+
+var xx = 0;
+function rot(){
+    if (xx % 2 == 0){
+    document.getElementById('arrow').style.transform = 'rotate(180deg)';}
+    else {
+    document.getElementById('arrow').style.transform = 'rotate(0deg)';
+    }
+    document.getElementById('arrow').style.transition = 'transform 0.3s linear';
+    xx += 1;
+}
+
+var ii = 0;
+
+function switchbc(){
+    if (ii % 2 == 0){
+        document.body.style.background = "linear-gradient(90deg, #000 50%, #fff 50%)";
+        ii +=1;
+    }
+    else{
+        document.body.style.background = "linear-gradient(90deg, #fff 50%, #000 50%)";
+        ii+=1;
+    }
+
+}
+
 
