@@ -45,7 +45,7 @@ function change(element){
         performance.querySelector('p').style.maxHeight = '0';
         rightImg.src = '../photos/laptopPremium.png';
     }
-    text.style.maxHeight = '200px'; // Adjust the height as needed
+    text.style.maxHeight = '200px';
 
 }
 
@@ -77,3 +77,52 @@ function copyText(element){
     navigator.clipboard.writeText(text);
     alert("Copied " + text + " to clipboard");
 }
+
+const textInput = document.getElementById('textInput');
+const displaiedText = document.getElementById('displayText');
+
+const savedText = localStorage.getItem('savedText');
+if (savedText) {
+    displaiedText.textContent = "Hello, " + savedText;
+}
+textInput.addEventListener('keyup', function() {
+    displaiedText.textContent = "Hello, " + this.value;
+  });
+
+function saveText() {
+    const inputText = textInput.value.trim(); 
+    if (inputText) {
+        displaiedText.textContent ="Hello, " + inputText; 
+        localStorage.setItem('savedText', inputText); 
+        textInput.value = ''; 
+    }
+};
+
+function search() {
+    var searchText = document.getElementById("searchText").value;
+    var elementsToSearch = document.querySelectorAll('p, h1, h2, h3'); 
+    var pattern = new RegExp(searchText, "g");
+    var matches = 0;
+    var result = document.getElementById("result");
+  
+    document.querySelectorAll('.highlight').forEach(function (highlightedElement) {
+      highlightedElement.classList.remove('highlight'); 
+    });
+  
+    elementsToSearch.forEach(function(element) {
+      var textContent = element.textContent;
+      element.innerHTML = textContent.replace(pattern, function(match) {
+        matches++;
+        return '<span class="ali-highlight">' + match + '</span>';
+      });
+    });
+
+    if (searchText == ""){
+        result.innerHTML = "";
+    }
+    else if (matches > 0) {
+        result.innerHTML = "Found " + matches + " matches";
+    } else {
+        result.innerHTML = "No matches found";
+    }
+}  

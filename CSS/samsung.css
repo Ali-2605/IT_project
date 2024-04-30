@@ -70,7 +70,7 @@ font-size: 3vh;
     background-color: black;
     color: white;
 }
-*{padding: 0; margin: 0; box-sizing: border-box;}
+*{box-sizing: border-box;}
 .ali-header {
     padding-top: 100px;
     padding-bottom: 90px;
@@ -201,3 +201,24 @@ font-size: 3vh;
 .ali-laptopName:hover{
     color: rgb(180, 166, 166);
 }
+
+.ali-textInput {
+    background-color: black;
+    border: 2px groove rgba(255, 255, 255, 0.747);
+    border-radius: 8px;
+    color: gray;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  #ali-submitButton{
+    background-color: black;
+    border: 2px groove rgba(255, 255, 255, 0.747);
+    padding: 10px;
+    color: white;
+    border-radius: 20%;
+  }
+
+  .ali-highlight{
+    background-color: rgba(128, 128, 128, 0.411);
+  }

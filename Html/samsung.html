@@ -39,6 +39,19 @@
     <h1>Samsung</h1>        
     <h2>Do what you can't.</h2>
 </header>
+
+<search style="padding-top: 20px;">
+    <form>
+        <input onkeyup="search()" type="text" id="searchText" class="ali-textInput" placeholder="Search text">
+    </form>
+</search>
+<p id="result"></p>
+
+<h3 id="displayText" style="padding-top: 10px; padding-bottom: 5px;">Hello there best friend, </h3>
+<form>
+    <input type="text" id="textInput" class="ali-textInput" maxlength="25" placeholder="Enter your name here...">
+    <button id="ali-submitButton" onclick="saveText()">Submit</button>
+</form>
 <div class="content">
     <div class="left-content">
         <div id="ali-display" onmouseover="change(this)">
@@ -68,10 +81,9 @@
     </div>
 
 </div>
-<video autoplay loop muted controls class="ali-video">
-    <source src="../media/Introducing the Galaxy Book 4 Series.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+
+
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/epIbrUjQ1TA" title="Introducing the Galaxy Book 4 Series | Latest Samsung Laptop 2024 | Samsung UK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <form action="samsungTable.html">
     <button class="ali-button">See Recomndations</button>
 </form>
