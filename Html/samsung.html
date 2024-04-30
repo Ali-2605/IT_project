@@ -24,53 +24,51 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a id="navitem" class="nav-link" href="home.html">Home</a>
-                    <a id="navitem" class="nav-link" href="">sama</a>
-                    <a id="navitem" class="nav-link" href="">fatima</a>
+                    <a id="navitem" class="nav-link" href="lenovo2.html">Lenovo</a>
+                    <a id="navitem" class="nav-link" href="apple.html">Apple</a>
                     <a id="navitem" class="nav-link" href="samsung.html">ali</a>
-                    <a id="navitem" class="nav-link" href="">shahd</a>
-                    <a id="navitem" class="nav-link" href="">abduallah</a>
-                    <a id="navitem" class="nav-link" href="">team</a>
+                    <a id="navitem" class="nav-link" href="dell.html">shahd</a>
+                    <a id="navitem" class="nav-link" href="asus.html">abduallah</a>
                 </div> <!-- /navbar-nav -->
 
             </div> <!-- /navbar-collapse -->
         </div> <!-- /container-fluid -->
     </nav> <!-- /navbar -->
-<header class="ali-header" id="samsungHeader" onclick="scrollToDiv(this.id)">
+<header class="ali-header" id="samsungHeader" onclick="ali_scrollToDiv(this.id)">
     <h1>Samsung</h1>        
     <h2>Do what you can't.</h2>
 </header>
 
 <search style="padding-top: 20px;">
-    <form>
-        <input onkeyup="search()" type="text" id="searchText" class="ali-textInput" placeholder="Search text">
-    </form>
+    <input onkeyup="ali_search()" type="text" id="searchText" class="ali-textInput" placeholder="Search text">
 </search>
+
 <p id="result"></p>
 
 <h3 id="displayText" style="padding-top: 10px; padding-bottom: 5px;">Hello there best friend, </h3>
 <form>
     <input type="text" id="textInput" class="ali-textInput" maxlength="25" placeholder="Enter your name here...">
-    <button id="ali-submitButton" onclick="saveText()">Submit</button>
+    <button id="ali-submitButton" onclick="ali_saveText()">Submit</button>
 </form>
 <div class="content">
     <div class="left-content">
-        <div id="ali-display" onmouseover="change(this)">
-            <h3><strong>Stunning Displays:</strong></h3>
+        <div id="ali-display" onmouseover="ali_display(this)">
+            <strong>Stunning Displays:</strong>
             <p id="ali-display-p" style="max-height: 200px;">Samsung leverages their display expertise for gorgeous visuals, ideal for creative professionals.</p>
         </div>
-        <div id="ali-factors" onmouseover="change(this)">
+        <div id="ali-factors" onmouseover="ali_display(this)">
             <strong>Innovative Form Factors:</strong>
             <p id="ali-factors-p">Laptops like the Galaxy Book Flex showcase Samsung's willingness to experiment with unique designs.</p>
         </div>
-        <div id="ali-ecosystem" onmouseover="change(this)">
+        <div id="ali-ecosystem" onmouseover="ali_display(this)">
             <strong>Seamless Galaxy Ecosystem:</strong>
             <p id="ali-ecosystem-p">Samsung devices integrate flawlessly, creating a smooth workflow.</p>
         </div>
-        <div id="ali-performance" onmouseover="change(this)">
+        <div id="ali-performance" onmouseover="ali_display(this)">
             <strong >Performance for All Needs:</strong>
             <p id="ali-performance-p">Samsung doesn't offer a one-size-fits-all solution. They boast a diverse range of models, each equipped with high-performance components. This variety ensures you can find the perfect laptop to match your specific needs, whether you're a power user, a casual user, or someone in between.</p>
         </div>
-        <div id="ali-premium" onmouseover="change(this)">
+        <div id="ali-premium" onmouseover="ali_display(this)">
             <strong>Premium Quality:</strong>
             <p id="ali-premium-p">Samsung doesn't skimp on quality. Their laptops are built with premium materials like aerospace-grade aluminum for a sturdy and luxurious feel.</p>
         </div>
@@ -81,6 +79,10 @@
     </div>
 
 </div>
+<video autoplay loop muted class="ali-video">
+<source src="../Media/samsungLogoAnimation.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/epIbrUjQ1TA" title="Introducing the Galaxy Book 4 Series | Latest Samsung Laptop 2024 | Samsung UK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

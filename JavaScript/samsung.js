@@ -5,7 +5,7 @@ const performance = document.getElementById('ali-performance');
 const premium = document.getElementById('ali-premium');
 const rightImg = document.getElementById('rightImg');
 
-function change(element){
+function ali_display(element){
     var divId = element.id;
     var textId = divId + '-p';
     var text = document.getElementById(textId);
@@ -46,11 +46,10 @@ function change(element){
         rightImg.src = '../photos/laptopPremium.png';
     }
     text.style.maxHeight = '200px';
-
 }
 
 
-function scrollToDiv(id) {
+function ali_scrollToDiv(id) {
     if(id == "samsungHeader"){
         var divName = 'ali-display';
         divId = document.getElementById(divName);     
@@ -72,7 +71,7 @@ function scrollToDiv(id) {
     })
 }
 
-function copyText(element){
+function ali_copyText(element){
     text = element.innerHTML;
     navigator.clipboard.writeText(text);
     alert("Copied " + text + " to clipboard");
@@ -98,9 +97,9 @@ function saveText() {
     }
 };
 
-function search() {
+function ali_search() {
     var searchText = document.getElementById("searchText").value;
-    var elementsToSearch = document.querySelectorAll('p, h1, h2, h3'); 
+    var elementsToSearch = document.querySelectorAll('p, h1, h2, h3, strong'); 
     var pattern = new RegExp(searchText, "g");
     var matches = 0;
     var result = document.getElementById("result");
@@ -126,3 +125,129 @@ function search() {
         result.innerHTML = "No matches found";
     }
 }  
+
+
+
+
+// -------------------------------------------------------------------------------------
+// Doha's code
+
+function d_containsNumber(str) {
+    return str.match(/\d+/) !== null;
+  } 
+  function d_containsChar(str) {
+    return str.match(/[a-zA-Z]/) !== null; 
+  }
+  
+  
+  localStorage.setItem('dohajs','doha');
+  var doha = localStorage.getItem('dohajs');
+  
+  function user_login(){
+      var d_user= document.getElementById('username');
+      var d_pas= document.getElementById('password');
+      var d_x= d_user.value;
+      var d_y= d_pas.value;
+      if(d_x.length>=10){
+          alert("write less than 10 char in username");
+      }
+      else if(!d_containsChar(d_x)){
+          alert("write alphabet in username");
+      }
+      else if(d_y.length<=8){
+          alert("write more than 8 char in password");
+      }
+      else if(!d_containsNumber(d_y)){
+          alert("write number in password");
+      }
+      else if(!d_containsChar(d_y)){
+          alert("write alphabet in password");
+      }
+      else{
+          window.open("home.html");
+      }
+  }
+
+  function d_containsNumber(str) {
+    return str.match(/\d+/) !== null;
+  } 
+  function d_containsChar(str) {
+    return str.match(/[a-zA-Z]/) !== null; 
+  }
+  
+  
+  localStorage.setItem('dohajs','doha');
+  var doha = localStorage.getItem('dohajs');
+  
+  function user_login(){
+      var d_user= document.getElementById('username');
+      var d_pas= document.getElementById('password');
+      var d_x= d_user.value;
+      var d_y= d_pas.value;
+      if(d_x.length>=10){
+          alert("write less than 10 char in username");
+      }
+      else if(!d_containsChar(d_x)){
+          alert("write alphabet in username");
+      }
+      else if(d_y.length<=8){
+          alert("write more than 8 char in password");
+      }
+      else if(!d_containsNumber(d_y)){
+          alert("write number in password");
+      }
+      else if(!d_containsChar(d_y)){
+          alert("write alphabet in password");
+      }
+      else{
+          window.open("home.html");
+      }
+      
+  }
+
+//--------------------------------------------------------------------------------------------------------
+// Sama Tarek's Code
+function search(){
+    let searchbar =document.querySelector('.search-input').aValue.toLocaleUpperCase;
+    let productlist =document.querySelector('product-list');
+    let product =document.querySelectorAll('product');
+    let productname =document.getElementsByName('h2');
+
+    for (let i = 0; i<productname.length; i++){
+        if(productname[i].innerHTML.toLocaleUpperCase().indexOf(searchbar) >= 0){
+            product[i].style.display = "";
+        } else{
+            product[i].style.display = "non";
+        }
+    }
+}
+
+var z = 0;
+ function change(){
+    
+     if (z % 2 == 0){
+        document.body.style.backgroundColor="gray"; 
+     z +=1;
+    }
+    else{
+        document.body.style.backgroundColor="white";
+        z +=1;
+ }
+    
+}
+
+var b=0;
+function change2(){
+
+    if (b % 2 == 0){
+        document.body.style.color="blue"; 
+        b +=1;
+    }
+    else{
+        document.body.style.color="black";
+        b +=1;
+    }
+}
+
+// --------------------------------------------------------------
+
