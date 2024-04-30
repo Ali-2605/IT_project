@@ -93,12 +93,12 @@
     border: 1px #d4d1d1 solid;
 }
 .nav1-start{
-    padding-left: 80vh;
+    padding-left: 110vh;
     display: inline-block;
 }
 .title-brands{
     text-align: center;
-    padding:4rem 0 7rem 0;
+    padding:4rem 0 5rem 0;
 }
 .title-brands h1{
     font-size: 12vh;
@@ -142,12 +142,12 @@
     opacity: .7;
 }
 .fatima img{
-    width: 165px;
-    height: 190px;
+    width: 145px;
+    height: 170px;
 }
 .fatima img:hover{
-    width: 195px;
-    height: 220px;
+    width: 175px;
+    height: 200px;
 }
 .sama img{
     margin-top: 7vh;
@@ -365,7 +365,7 @@
 }
 .login .form-login{
     width: 30%;
-    height: 65%;
+    height: 90%;
     margin: auto;
     padding: 50px;
     border: 1px white solid;

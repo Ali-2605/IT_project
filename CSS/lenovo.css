@@ -85,7 +85,7 @@
 }
 
 .button-lenovo {
-    padding: 10px 20px;
+    padding: 10px 50px;
     background-color: #3498db;
     color: #fff;
     border: none;
@@ -132,19 +132,19 @@
 }
 
 
-table {
+.sama-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 25px;
 }
 
-th, td {
+.sama-table th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
 }
 
-th {
+.sama-table th {
     background-color: #f2f2f2;
 }
 
