@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <!-- http://getbootstrap.com/docs/5.3/ -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet'>
+        <link href="https://fonts.cdnfonts.com/css/nunito" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>        
+    
+        
+        <link href="/static/asus.css" rel="stylesheet">
+       
+        <title>Asus Recommendations</title>
+    </head>
+
+    <body id="asusStorebody" class="bodyasus">
+
+        <nav class="navbar" id="navv">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <div class="d-inline-block align-text-top topicon"></div>
+                    <div class="d-inline-block align-text-top lline"></div>
+                    <span class="ul">Vista</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="arrow" onclick="rot()">
+                    <span class="navbar-toggler-icon" ></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a id="navitem" class="nav-link" href="/">Home</a>
+                      <a id="navitem" class="nav-link" href="/">Asus</a>
+                      <a id="navitem" class="nav-link" href="/">Apple</a>
+                      <a id="navitem" class="nav-link" href="/">Samsung</a>
+                      <a id="navitem" class="nav-link" href="/">Dell</a>
+                      <a id="navitem" class="nav-link" href="/">Lenovo</a>
+                        <a id="navitem" class="nav-link" href="/">team</a>
+                    </div> <!-- /navbar-nav -->
+    
+                </div> <!-- /navbar-collapse -->
+            </div> <!-- /container-fluid -->
+        </nav> <!-- /navbar -->
+
+        <div class="asus-rec-title">
+            <div class="white-title" id="tw">Asus Laptop</div>
+            <div class="black-title" id="tb">Recommendations</div>
+        </div>
+
+        <button class="btn btn-primary btndoc" onclick="switchbc()" style="position: relative; left: 0; display: flex; margin-left: 50px;">theme</button>
+
+
+        <search style="padding-top: 20px;">
+          <input type="text" placeholder="Search">
+          <button class="btn btn-primary btndoc" type="submit">search</button>
+      </search>
+
+
+        <div class="asus-cards">
+            <div class="card asus-left-card">
+                
+                <video class="card-img-top" muted controls poster="../photos/zenbook2.jpg">
+                    <source src="../media/zenbook.mp4" type="video/mp4">
+                    <source src="../media/zenbook.ogg" type="video/ogg">
+                  </video>
+
+                  <a href="https://www.asus.com/eg-en/laptops/for-home/zenbook/zenbook-14-oled-ux3402/" style="text-decoration: none; color: black;">
+                <div class="card-body asus-left-cardbody">
+                  <h5 class="card-title asus-card-title">ASUS Zenbook 14 OLED</h5>
+                  <p class="card-text asus-card-txt">Windows 11 Home<br>
+                    Up to 12th gen Intel® Core™ i7 processor<br>
+                    Up to Intel® Iris Xᵉ Graphics<br>
+                    Up to 16 GB memory<br>
+                    Up to 1 TB SSD storage<br>
+                    Long-lasting 75 Wh battery<br>
+                 </p>
+                </div>
+                </a>
+            </div>
+            
+
+            <div class="card asus-right-card">
+                
+
+                  <iframe width="540" height="300" class="card-img-top" src="https://www.youtube.com/embed/mxWGSBKWxI4" title="ASUS Vivobook Pro 15 OLED (N6506) #Intel | 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                  <a href="https://www.asus.com/laptops/for-home/vivobook/vivobook-pro-15-oled-k3500-11th-gen-intel/" style="text-decoration: none; color: black;">
+                <div class="card-body asus-right-cardbody">
+                  <h5 class="card-title asus-card-title">ASUS Vivobook Pro 15 OLED</h5>
+                  <p class="card-text asus-card-txt">
+                    15.6” FHD OLED Display<br>
+                    Windows 11 Pro Home <br>
+                    Up to Intel®
+                    Core™ i7-11370H
+                    processor<br>
+                    Up to NVIDIA®
+                    GeForce® RTX™ 3050 Graphics<br>
+                    Up to 16GB
+                    3200 MHz DDR4 memory<br>
+                    Up to 1TB
+                    PCIe® SSD storage<br>
+                  </p>
+                </div>
+                </a>
+            </div>
+    </div>
+
+    <br>
+    <br>
+
+
+    <div class="tables-div-asus">
+
+    <div class="table-container-asus">
+        <h2>Specifications</h2>
+    <table class="table-asus">
+        <tr>
+          <th>Feature</th>
+          <th>Specification</th>
+        </tr>
+        <tr>
+          <td>Display</td>
+          <td>14-inch OLED FHD (1920 x 1080 pixels)</td>
+        </tr>
+        <tr>
+          <td>Processor</td>
+          <td>Intel Core i7-1165G7</td>
+        </tr>
+        <tr>
+          <td>Graphics</td>
+          <td>Intel Iris Xe Graphics</td>
+        </tr>
+        <tr>
+          <td>RAM</td>
+          <td>Up to 16GB LPDDR4X</td>
+        </tr>
+        <tr>
+          <td>Storage</td>
+          <td>Up to 1TB PCIe SSD</td>
+        </tr>
+        <tr>
+          <td>Operating System</td>
+          <td>Windows 10 Home</td>
+        </tr>
+        <tr>
+          <td>Connectivity</td>
+          <td>Wi-Fi 6, Bluetooth 5.0</td>
+        </tr>
+        <tr>
+          <td>Battery</td>
+          <td>67Whrs</td>
+        </tr>
+        <tr>
+          <td>Weight</td>
+          <td>1.19 kg</td>
+        </tr>
+        <tr>
+          <td>Dimensions (W x D x H)</td>
+          <td>31.9 x 20.8 x 1.39 cm</td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="table-container-asus2">
+        <h2>Specifications</h2>
+      
+        <table class="table-asus2">
+          <tr>
+            <th>Feature</th>
+            <th>Specification</th>
+          </tr>
+          <tr>
+            <td>Display</td>
+            <td>15.6-inch OLED 4K UHD (3840 x 2160 pixels)</td>
+          </tr>
+          <tr>
+            <td>Processor</td>
+            <td>Intel Core i7-11800H</td>
+          </tr>
+          <tr>
+            <td>Graphics</td>
+            <td>NVIDIA GeForce RTX 3050 Ti</td>
+          </tr>
+          <tr>
+            <td>RAM</td>
+            <td>Up to 32GB DDR4</td>
+          </tr>
+          <tr>
+            <td>Storage</td>
+            <td>Up to 1TB SSD</td>
+          </tr>
+          <tr>
+            <td>Operating System</td>
+            <td>Windows 10 Home/Pro</td>
+          </tr>
+          <tr>
+            <td>Connectivity</td>
+            <td>Wi-Fi 6, Bluetooth 5.2</td>
+          </tr>
+          <tr>
+            <td>Battery</td>
+            <td>96Whrs</td>
+          </tr>
+          <tr>
+            <td>Weight</td>
+            <td>1.8 kg</td>
+          </tr>
+          <tr>
+            <td>Dimensions (W x D x H)</td>
+            <td>35.4 x 23.3 x 1.89 cm</td>
+          </tr>
+        </table>
+      </div>
+
+
+
+</div>
+
+
+
+    <div class="asus-feed">
+        
+        <div>
+        <form>
+            <label class="mb-3">
+                What do you like about this device<br>
+                <input class="form-control-lg" autofocus autocomplete="off" type="text" style="width: 450px;">
+            
+                &nbsp;&nbsp;
+
+                <button type="submit" class="btn btn-primary btndoc">Enter</button>
+            </label>
+            
+        </form>
+    </div>
+
+    <div>
+        <form>
+            <label class="mb-3">
+                <span style="color: white;">What do you like about this device<br></span>
+                <input class="form-control-lg" autofocus autocomplete="off" type="text" style="width: 450px;" id="asus-form">
+            
+                &nbsp;&nbsp;
+
+                <button type="submit" class="btn btn-primary btndoc">Enter</button>
+            </label>
+            
+        </form>
+    </div>
+
+    </div>
+    
+
+<script src="/static/js.js"></script>
+    </body>
+</html>
