@@ -1,0 +1,187 @@
+body{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header1-apple{
+    color: rgb(255, 255, 255);
+    padding: 50px 40px 100px 50px; 
+    background-image: url('../photos/header-apple.jpg');
+    background-size: cover; 
+}
+header h2{
+    font-size: 35px;
+}
+.header2-apple{
+    color: rgb(255, 255, 255);
+    padding: 50px 40px 100px 50px; 
+    background-image: url('../photos/header2-apple.jpg');
+    background-size: cover; 
+}
+
+.nav-main-apple{
+    padding: 0px;
+    list-style-type: none;
+    color: antiquewhite;
+    width: 1000px;
+}
+.nav-main-apple li{
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+.nav-main-apple li a:link{
+    text-decoration: none;
+    color: white;
+}
+.nav-main-apple li a:visited{
+    text-decoration: none;
+    color: white;
+}
+.nav-main-apple li a:hover{
+    text-decoration: none;
+    color: white;
+}
+.nav-main-apple li a:active{
+    text-decoration: none;
+    color: white;
+}
+.nav2-main-apple{
+    padding: 0px;
+    list-style-type: none;
+    color: antiquewhite;
+    width: 1000px;
+}
+.nav2-main-apple li{
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+.nav2-main-apple li a:link{
+    text-decoration: none;
+    color: white;
+}
+.nav2-main-apple li a:visited{
+    text-decoration: none;
+    color: white;
+}
+.nav2-main-apple li a:hover{
+    text-decoration: none;
+    color: white;
+}
+.nav2-main-apple li a:active{
+    text-decoration: none;
+    color: white;
+}
+.main-apple{
+    background-color: rgba(0, 0, 0, 0.35);
+    text-align: center;
+}
+.area1-main-apple{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black; 
+    position: relative;
+    overflow: hidden;
+    min-height: 150vh;
+    color: antiquewhite;
+    font-size: larger;
+    font-weight: bolder;
+}
+.vid-main-apple{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+.main-buttons1-apple{
+    font-size: 15px;
+    background-color: rgba(31, 62, 11, 40);
+    color: antiquewhite;
+    border-radius: 15px;
+    border-color: rgba(0, 0, 0, 0);
+    margin: 100px 0 0 -270px;
+    padding: 5px 8px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.main-buttons1-apple:hover{
+    transform: scale(1.1);
+}
+.about-main-apple{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(118, 182, 131);
+    justify-content: center;
+    padding: 50px 40px 100px 50px; 
+}
+.about-main-apple div{
+    background-color: white;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    
+}
+.img1-main-apple{
+   border-image: fill;
+}
+.inbetween-apple{
+    padding: 50px 40px 100px 50px; 
+    background-image: url('../photos/section-main-apple.jpg');
+    background-size: contain;
+}
+.footer1-apple{
+    background-color: rgb(48, 15, 0);
+    padding: 10px 20px;
+    color: blanchedalmond;
+    text-indent: 100px;
+}
+.footer2-apple{
+    background-color: rgb(108, 117, 234);
+    padding: 10px 20px;
+    color: rgb(1, 29, 53);
+    text-indent: 100px;
+}
+.iframe-apple{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 3, 52);
+    justify-content: space-between;
+    padding: 50px 40px 100px 50px; 
+    margin: 0 0 0 0;
+}
+.img1-main-apple{
+    width: 250px;
+    height: 145px;
+    margin-top: 40px;
+}
+ .fig-about-apple{
+    text-align: center;
+}
+.form-title-apple{
+    padding:20px 40px 25px 100px ;
+    margin-top: 0 0 0 0;
+    background-color: rgb(12, 30, 0);
+    color: antiquewhite;
+}
+.form1-apple{
+    text-align: left;
+    align-items: center;
+    background-color: rgb(118, 182, 131);
+    padding:50px 40px 100px 100px ;
+    margin-top: 0px;
+ 
+}
+.main-button2-apple{
+    font-size: 15px;
+    background-color: antiquewhite;
+    color: rgba(31, 62, 11, 40);
+    border-radius: 5px;
+    border-color: rgb(0, 0, 0, 0);
+    padding: 8px 2px;
+    cursor: pointer;
+    margin-bottom: 9px;
+}
+
