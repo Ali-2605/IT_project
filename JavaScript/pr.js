@@ -1,30 +1,34 @@
-function containsNumber(str) {
-  // Check if the string contains any digit between 0 and 9
+function d_containsNumber(str) {
   return str.match(/\d+/) !== null;
 } 
-function containsChar(str) {
-  // Check if the string contains any digit between 0 and 9
+function d_containsChar(str) {
   return str.match(/[a-zA-Z]/) !== null; 
-//   check /[a-zA-Z]/
 }
+
+
+localStorage.setItem('dohajs','doha');
+    var doha = localStorage.getItem('dohajs');
+    console.log(doha); 
+}
+
 function user_login(){
-    var user= document.getElementById('username');
-    var pas= document.getElementById('password');
-    var x= user.value;
-    var y= pas.value;
-    if(x.length>=10){
+    var d_user= document.getElementById('username');
+    var d_pas= document.getElementById('password');
+    var d_x= user.value;
+    var d_y= pas.value;
+    if(d_x.length>=10){
         alert("write less than 10 char in username");
     }
-    else if(!containsChar(x)){
+    else if(!d_containsChar(d_x)){
         alert("write alphabet in username");
     }
-    else if(y.length<=8){
+    else if(d_y.length<=8){
         alert("write more than 8 char in password");
     }
-    else if(!containsNumber(y)){
+    else if(!d_containsNumber(d_y)){
         alert("write number in password");
     }
-    else if(!containsChar(y)){
+    else if(!d_containsChar(d_y)){
         alert("write alphabet in password");
     }
     else{
